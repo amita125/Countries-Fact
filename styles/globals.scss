@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "colors";
+
+html,
+body {
+  height: 100%;
+  // overflow: hidden;
+}
+
+.light {
+  background-color: $light;
+  color: black;
+}
+
+.dark {
+  background-color: $dark;
+  color: white;
+}
+
+.light-card {
+  box-shadow: -6px 3px 3px 0px rgba(224, 223, 223, 0.12),
+    0px 3px 6px 0px rgba(245, 245, 245, 0.22),
+    0px 5px 10px 0px rgba(245, 245, 245, 0.2);
+  border: 2px solid rgba(243, 240, 240, 0.7);
+  border-radius: 7px;
+}
+
+.dark-card {
+  box-shadow: -6px 3px 5px 0px rgba(109, 101, 101, 0.6),
+    0px 3px 6px 0px rgba(245, 245, 245, 0.22),
+    0px 5px 10px 0px rgba(245, 245, 245, 0.2);
+  border-radius: 7px;
+}
+
+.dark-card:hover {
+  background-color: #374151;
+}
