@@ -7,7 +7,7 @@
 html,
 body {
   height: 100%;
-  // overflow: hidden;
+  overflow: hidden;
 }
 
 .light {
@@ -21,11 +21,13 @@ body {
 }
 
 .light-card {
-  box-shadow: -6px 3px 3px 0px rgba(224, 223, 223, 0.12),
-    0px 3px 6px 0px rgba(245, 245, 245, 0.22),
-    0px 5px 10px 0px rgba(245, 245, 245, 0.2);
-  border: 2px solid rgba(243, 240, 240, 0.7);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   border-radius: 7px;
+}
+
+.light-card:hover {
+  background-color: #e7e5e4;
 }
 
 .dark-card {
@@ -36,5 +38,65 @@ body {
 }
 
 .dark-card:hover {
-  background-color: #374151;
+  background-color: #1e293b;
+}
+
+.light-text {
+  color: black;
+}
+
+.dark-text {
+  color: #e5e5e5;
+}
+
+.light-border {
+  background-color: $light;
+  border: solid 1px #d1d5db;
+}
+
+.dark-border {
+  background-color: $dark;
+  border: solid 1px #4b5563;
+}
+
+.dark-border:hover {
+  background-color: #1e293b;
+}
+
+.light-border:hover {
+  background-color: #e7e5e4;
+}
+
+// Pagination Styles
+
+.light-current{
+  background-color: #e0e7ff;
+}
+
+
+
+.dark-current{
+  background-color: #334155;
+
+}
+
+.dark-current:hover {
+  background-color: #334155;
+}
+
+
+.light-selected {
+  background-color: transparent;
+}
+
+.light-selected:hover {
+  background-color: #e7e5e4;
+}
+
+.dark-selected{
+  background-color: transparent;
+}
+
+.dark-selected:hover {
+  background-color: #334155;
 }

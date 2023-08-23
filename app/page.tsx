@@ -8,10 +8,11 @@ export default function Home() {
   const { theme } = useTheme();
 
   return (
-    <div className={`${[theme]}`} >
+    <div className={`h-screen ${[theme]}`} >
       <Header />
       <Dashboard/>
       <Footer />
+      
     </div>
   );
 }

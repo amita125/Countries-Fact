@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 
 function Footer() {
   return (
-    <div>Footer</div>
-  )
+    <div className="flex justify-center items-center  text-sm ">
+      RestCountries App © {new Date().getFullYear()} Created by AmitaGhale
+    </div>
+  );
 }
 
-export default Footer
+export default Footer;

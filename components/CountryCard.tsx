@@ -12,36 +12,35 @@ const CountryCard = ({ country }: CountryCardProps) => {
   const { theme } = useTheme();
 
   return (
-    <div
-      className={`mx-3 mt-6 flex flex-col rounded-lg ${[theme]} ${[
-        theme,
-      ]}-card `}
-    >
-      <Link href={`/${country.name.common}`}>
-        <Image
-          src={country.flags.png}
-          alt={`${country.name.common} flag`}
-          width={500}
-          height={500}
-          objectFit="contain"
-        />
+    <Link href={`/${country.cca3}`}>
+      <div
+        className={`mx-3 mt-6 flex flex-col rounded-lg ${[theme]}-card ${[theme]}-text`}
+      >
+        <picture>
+          <img
+            className="object-scale-down h-48 w-full"
+            src={country.flags.svg}
+            alt={`${country.name.common} flag`}
+          />
+        </picture>
 
-        <div className="p-6">
-          <h5 className="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+        <div className="p-4 md:p-5">
+          <h5 className="mb-2 text-xl font-medium leading-tight">
             {country.name.common}{" "}
           </h5>
-          <p className="mb-4 text-base text-neutral-600 dark:text-neutral-200">
-            Population: <span>{country.population}</span>
+          <br />
+          <p className="mb-4 text-base ">
+            Population: <span>{country.population} </span>
           </p>
-          <p className="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+          <p className="mb-4 text-base ">
             Region: <span>{country.region}</span>
           </p>
-          <p className="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+          <p className="mb-4 text-base ">
             Capital: <span>{country.capital}</span>
           </p>
         </div>
-      </Link>
-    </div>
+      </div>
+    </Link>
   );
 };
 
