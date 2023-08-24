@@ -1,9 +1,40 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Countries Fact 
 
-## Getting Started
+[Description](#description) | [Features](#features) | [Tools Used](#tools) | [Getting Started](#installation) | [App Hosting](#deployed) | 
 
-First, run the development server:
+## <a name="description">Description</a>
 
+This is a countries fact app built using [Next.js](https://nextjs.org/) with data available and fetched from the [Rest Countries API](https://restcountries.com/). This app can be previewed on this **[link](https://country-facts.vercel.app/)** .
+
+## <a name="features">Features</a>
+
+- On initial load you can see the list of countries displayed in the alphabetal list. 
+- Pagination is enabled by default therefore on load you can see total of 10 countries.
+- The user can search or filter the list of countries by region. 
+- On selecting the individual country you can further see the selected country details. 
+- The user can also select the border country from the selected country page.
+- The app can also be viewed in light or dark mode. 
+
+## <a name="tools">Tools Used </a>
+- **Visual Studio** code to write code . 
+- **create-next-app@latest** to generate the nextjs bioilerplate for applications
+- **React Hooks** to incorporate state management
+- **Sass Preprocessor** to style some in the app
+- **Tailwind css** for css framework
+
+## <a name="installation">Geting Started</a>
+
+- Clone the repository from github
+```bash
+https://github.com/amita125/Countries-Fact.git
+```
+
+- After cloning the repository, install the npm package first
+```bash
+npm install
+```
+
+- To run the project 
 ```bash
 npm run dev
 # or
@@ -12,23 +43,6 @@ yarn dev
 pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## <a name="deployed"> App Hosting </a>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+The app is hosted on [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) and can be viewed on this [link](https://country-facts.vercel.app/) page
