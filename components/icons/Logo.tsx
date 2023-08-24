@@ -9,6 +9,7 @@ function Logo() {
         strokeWidth="1.5"
         stroke="currentColor"
         className="w-6 h-6"
+        data-testid="logo"
       >
         <path
           strokeLinecap="round"

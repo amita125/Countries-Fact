@@ -7,6 +7,7 @@ import "../styles/globals.scss";
 export default function Home() {
   const { theme } = useTheme();
 
+
   return (
     <div className={`h-screen ${[theme]}`} >
       <Header />

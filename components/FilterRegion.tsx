@@ -21,13 +21,14 @@ const FilterRegion = ({ setRegion, region }: FilterRegionProps) => {
         className={` w-full rounded-md py-2 pl-3 pr-10 text-base ${[theme]}-border rounded-lg`}
         onChange={handleSelectChange}
         value={region}
+        data-testid="filter-region"
       >
         <option value="all">All</option>
-        <option value="Africa">Africa</option>
-        <option value="Americas">Americas</option>
-        <option value="Asia">Asia</option>
-        <option value="Europe">Europe</option>
-        <option value="Oceania">Oceania</option>
+        <option value="Africa" >Africa</option>
+        <option value="Americas" >Americas</option>
+        <option value="Asia" >Asia</option>
+        <option value="Europe" >Europe</option>
+        <option value="Oceania" >Oceania</option>
       </select>
     </div>
   );
